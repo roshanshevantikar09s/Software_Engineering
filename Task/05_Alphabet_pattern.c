@@ -7,8 +7,8 @@ void main()
 	
 	for(r=1;r<=5;r++){
 		
-		for(c=1;c<=r;c++){
-			printf("%c",64+c);
+		for(c=0;c<r;c++){
+			printf("%c",'A'+c);
 		}
 		printf("\n");
 	}
