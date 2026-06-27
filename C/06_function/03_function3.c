@@ -2,7 +2,7 @@
 #include<conio.h>
 
 void sub(int x,int y){
-	int data = x / y;
+	int data = x - y;
 	printf("\nsub : %d",data);
 }
 
