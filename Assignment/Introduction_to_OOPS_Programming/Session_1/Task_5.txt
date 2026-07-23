@@ -1,0 +1,5 @@
+| C (Procedural)                                               | C++ (OOP)                                                             |
+| ------------------------------------------------------------ | --------------------------------------------------------------------- |
+| 1. Data and functions are separate.                          | Data and functions are together inside a class.                       |
+| 2. Global arrays are used, making programs harder to manage. | Objects store their own data, making code organized.                  |
+| 3. Adding new features requires changing many functions.     | New methods can be added inside classes without affecting other code. |
