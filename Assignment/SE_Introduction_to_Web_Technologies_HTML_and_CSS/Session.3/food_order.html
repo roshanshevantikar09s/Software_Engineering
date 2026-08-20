@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zomato Food Order</title>
+</head>
+<body>
+
+    <h1>Zomato Food Order</h1>
+
+    <form>
+
+        <label>User Name:</label>
+        <input type="text" name="username" required>
+        <br><br>
+
+        <label>Food Item:</label>
+        <select name="food" required>
+            <option value="" disabled selected>Select Food</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Biryani">Biryani</option>
+        </select>
+        <br><br>
+
+        <label>Quantity:</label>
+        <input type="number" name="quantity" min="1" required>
+        <br><br>
+
+        <label>Delivery Instructions:</label><br>
+        <textarea name="instructions" required></textarea>
+        <br><br>
+
+        <!-- Order ID is fixed, so users should not change it. -->
+        <label>Order ID:</label>
+        <input type="text" value="ORD12345" disabled>
+        <br><br>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+</body>
+</html> 

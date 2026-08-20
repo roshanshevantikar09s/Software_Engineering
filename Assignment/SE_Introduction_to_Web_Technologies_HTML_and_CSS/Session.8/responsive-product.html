@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Q1: Mobile devices ke liye responsive viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Flipkart Product</title>
+
+    <style>
+
+        /* Basic Product Card */
+
+        .product-card {
+            display: flex;
+            width: 700px;
+            margin: 50px auto;
+            padding: 25px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            gap: 30px;
+        }
+
+        .product-card img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .product-details h2 {
+            font-size: 28px;
+        }
+
+        .price {
+            font-size: 24px;
+            color: green;
+        }
+
+        .buy-button {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+        }
+
+
+        /* Q3: 1200px Breakpoint */
+
+        @media only screen and (max-width: 1200px) {
+
+            .product-card {
+                font-size: 18px;
+                padding: 22px;
+            }
+
+        }
+
+
+        /* Q3: 900px Breakpoint */
+
+        @media only screen and (max-width: 900px) {
+
+            .product-card {
+                width: 80%;
+                font-size: 16px;
+                padding: 18px;
+            }
+
+            .product-card img {
+                width: 250px;
+                height: 250px;
+            }
+
+        }
+
+
+        /* Q2 & Q3: 600px Breakpoint */
+
+        @media only screen and (max-width: 600px) {
+
+            /* Horizontal se vertical layout */
+            .product-card {
+                flex-direction: column;
+                width: 85%;
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            .product-card img {
+                width: 100%;
+                height: auto;
+            }
+
+            .product-details {
+                padding: 10px;
+            }
+
+            .product-details h2 {
+                font-size: 22px;
+            }
+
+            .price {
+                font-size: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="product-card">
+
+        <img src="https://via.placeholder.com/300"
+             alt="Smartphone">
+
+        <div class="product-details">
+
+            <h2>Samsung Galaxy Smartphone</h2>
+
+            <p>
+                Powerful smartphone with a great camera,
+                long-lasting battery and fast performance.
+            </p>
+
+            <p class="price">₹25,999</p>
+
+            <button class="buy-button">Buy Now</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping and Movie Page</title>
+
+    <!-- Q2: Internal CSS -->
+    <style>
+        .offer-banner {
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: orange;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Q4: Playlist items */
+        .playlist-item {
+            background-color: #222;
+            color: white;
+            padding: 12px;
+            margin: 5px;
+        }
+
+        #playing-song {
+            background-color: green;
+            color: white;
+        }
+
+        /* Q5: Light/Dark Mode */
+        body {
+            background-color: white;
+            color: black;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        body.dark-mode {
+            background-color: #222;
+            color: white;
+        }
+
+        body.dark-mode .movie {
+            background-color: #333;
+            color: white;
+        }
+
+        .movie {
+            padding: 20px;
+            background-color: #eeeeee;
+        }
+    </style>
+
+    <!-- Q3: External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Q1: Flipkart-style Product Card -->
+    <h1>Flipkart Product</h1>
+
+    <div>
+        <h2 style="background-color: lightblue; font-size: 28px;">
+            Samsung Galaxy Smartphone
+        </h2>
+
+        <p>Powerful smartphone with a great camera and battery.</p>
+        <p>Price: ₹25,999</p>
+
+        <button>Buy Now</button>
+    </div>
+
+
+    <hr>
+
+
+    <!-- Q2: Myntra-style Offer Banner -->
+    <div class="offer-banner">
+        <h2>🔥 BIG SALE! 50% OFF 🔥</h2>
+        <p>Shop your favorite fashion products today!</p>
+    </div>
+
+
+    <hr>
+
+
+    <!-- Q4: Spotify Playlist -->
+    <h1>My Spotify Playlist</h1>
+
+    <div class="playlist-item">
+        Song 1 - Perfect
+    </div>
+
+    <div class="playlist-item" id="playing-song">
+        ▶ Song 2 - Shape of You (Currently Playing)
+    </div>
+
+    <div class="playlist-item">
+        Song 3 - Believer
+    </div>
+
+
+    <hr>
+
+
+    <!-- Q5: BookMyShow Movie Page -->
+    <div class="movie">
+        <h1>Avengers: Endgame</h1>
+        <p>Action | Adventure | Superhero</p>
+        <p>Rating: 4.5/5</p>
+
+        <button onclick="toggleMode()">Light / Dark Mode</button>
+    </div>
+
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+</html>

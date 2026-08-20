@@ -1,0 +1,11 @@
+/* Q4: Override Bootstrap's default primary button color */
+
+.btn-primary {
+    background-color: purple;
+    border-color: purple;
+}
+
+.btn-primary:hover {
+    background-color: darkviolet;
+    border-color: darkviolet;
+}
